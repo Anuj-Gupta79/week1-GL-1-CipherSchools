@@ -5,13 +5,13 @@ import "fmt"
 func main() {
 	var Func1 func(int) int
 	Func1 = func(x int) int {
-		fmt.Println("In a function 1", x)
+		fmt.Println("Function 1 :- ", x)
 		return 90
 	}
 	Q(Func1, 8)
 
 	Func2 := func(x int) int {
-		fmt.Println("In a function 2", x)
+		fmt.Println("Function 2 :- ", x)
 		return 20
 	}(100)
 	fmt.Println(Func2)
